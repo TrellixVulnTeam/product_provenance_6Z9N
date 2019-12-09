@@ -1,0 +1,55 @@
+
+
+
+<div class=" content">
+  
+
+    <div class=" row">
+        <!------------------------------------------------------------------------------------------------>
+        <!------------------------------------------------------------------------------------------------>
+        <div class=" card">
+          <div class=" card-header"><h5 class=" title">Create Product </h5></div>
+          <div class=" card-body">
+            <form>
+              <!------------------------------------------------------------------------------------------------>
+              <div class=" row">
+                  <div class=" col-md-12">
+                    <div class=" form-group">
+                      <label> Product Name </label>
+                      <input
+                        class=" form-control"
+                        placeholder="Product Name"
+                        type="text"
+                        [(ngModel)]="new_product.product_name"
+                        name="product_name"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class=" row">
+                    <div class=" col-md-8">
+                      <div class=" form-group">
+                        <label> Product Description </label>
+                        <textarea
+                          class=" form-control"
+                          cols="80"
+                          placeholder="Here can be your description"
+                          rows="4"
+                          [(ngModel)]="new_product.product_description"
+                          name="product_description"></textarea>
+                      </div>
+                    </div>
+                  </div>             
+  
+            <button type="button" rel="tooltip" class="btn btn-primary" (click)="createProduct()">
+              <i class="material-icons">CREATE</i>
+            </button>
+    
+        </form>
+        </div>
+      </div>
+  </div>
+  
+  
+  <!----------------------------------------------------------------------------------------------------------------------------------------->
+  <!----------------------------------------------------------------------------------------------------------------------------------------->
